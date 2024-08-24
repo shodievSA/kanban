@@ -1,6 +1,6 @@
-import Sortable  from '../node_modules/@shopify/draggable/build/esm/Sortable/Sortable.mjs';
-import SortAnimation from '../node_modules/@shopify/draggable/build/esm/Plugins/SortAnimation/SortAnimation.mjs';
-import DOMPurify from '../node_modules/dompurify/dist/purify.es.mjs';
+import Sortable  from './node_modules/@shopify/draggable/build/esm/Sortable/Sortable.mjs';
+import SortAnimation from './node_modules/@shopify/draggable/build/esm/Plugins/SortAnimation/SortAnimation.mjs';
+import DOMPurify from './node_modules/dompurify/dist/purify.es.mjs';
 
 window.addEventListener("load", (e) => {
 
