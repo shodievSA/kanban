@@ -18,8 +18,17 @@ module.exports = {
           },
         },
       },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'], // Handle CSS files
+      },
     ],
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './index.html', // Path to your HTML template
+    }),
+  ],
   resolve: {
     extensions: ['.js', '.mjs'],
     modules: [path.resolve(__dirname, 'node_modules'), 'node_modules'],
