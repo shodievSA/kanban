@@ -1,6 +1,6 @@
-import Sortable  from './node_modules/@shopify/draggable/build/esm/Sortable/Sortable.mjs';
-import SortAnimation from './node_modules/@shopify/draggable/build/esm/Plugins/SortAnimation/SortAnimation.mjs';
-import DOMPurify from './node_modules/dompurify/dist/purify.es.mjs';
+import { Sortable }  from '@shopify/draggable';
+import { Plugins } from '@shopify/draggable';
+import DOMPurify from 'dompurify';
 
 window.addEventListener("load", (e) => {
 
@@ -156,7 +156,7 @@ const sortable = new Sortable(
             easingFunction: 'ease-in-out',
 
         },
-        plugins: [SortAnimation]
+        plugins: [Plugins.SortAnimation]
     }
 
 );
