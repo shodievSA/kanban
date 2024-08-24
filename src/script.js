@@ -1,3 +1,4 @@
+import './styles.css'; // Path to your CSS file
 import { Sortable }  from '@shopify/draggable';
 import { Plugins } from '@shopify/draggable';
 import DOMPurify from 'dompurify';
